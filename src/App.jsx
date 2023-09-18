@@ -8,6 +8,8 @@ import Contact from "./Components/Pages/Contact";
 import Home from "./Components/Pages/Home";
 //import AnimatePresence
 import { AnimatePresence } from "framer-motion";
+import Navbar from "./Components/Navigation/Navbar";
+import Blog from "./Components/Pages/Blog";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,11 +17,13 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </AnimatePresence>
     </>

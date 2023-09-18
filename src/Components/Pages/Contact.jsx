@@ -1,7 +1,16 @@
 import React from "react";
+import Transition from "../Framer/Transition";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <>
+      <body className="w-full h-screen">
+        <form action="">
+          <input type="text" />
+        </form>
+      </body>
+    </>
+  );
 };
 
-export default Contact;
+export default Transition(Contact);
