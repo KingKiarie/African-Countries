@@ -6,11 +6,10 @@ const Home = () => {
     <>
       <body>
         <main>
-          <div className="ml-20">
+          <div className="ml-40">
             <h1 className="text-black font-bold">African Nations</h1>
             <p>Hello world</p>
             ksajdkjkasd
-            
           </div>
         </main>
       </body>
@@ -18,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Transition(Home);
+export default Home;

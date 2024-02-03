@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./navbar.css";
+
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -7,19 +7,19 @@ const Navbar = () => {
   const Menus = [
     {
       title: "Home",
-      url: "/home",
+      url: "/",
       gap: true,
       src: "src/assets/home-20-svgrepo-com.svg",
     },
     {
       title: "About",
-      url: "/about",
+      url: "/About",
       gap: true,
       src: "src/assets/globe-svgrepo-com.svg",
     },
     {
       title: "Contact",
-      url: "/contact",
+      url: "/Contact",
       gap: true,
       src: "src/assets/contact-phone-talking-svgrepo-com.svg",
     },
@@ -31,10 +31,10 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className="flex">
+      <nav className="flex ">
         <div
           className={`${
-            open ? "w-72" : "w-20"
+            open ? "w-44" : "w-20"
           } duration-300 h-screen flex-wrap relative bg-opacity-90 bg-blur-lg bg-orange-500 rounded-3xl p-5 pt-8 ml-2`}
         >
           <img
